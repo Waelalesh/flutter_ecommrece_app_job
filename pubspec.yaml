@@ -55,10 +55,10 @@ dependencies:
   image_pickers: ^2.0.0+2
   # Code generater (mainly used with cubit & retrifit)
   # https://pub.dev/packages/freezed/install
-  # freezed: ^2.5.7
+  freezed: ^2.5.7
   # Annotations for the freezed code-generator. This package does nothing without freezed too.
   # https://pub.dev/packages/freezed_annotation/install
-  # freezed_annotation: ^2.4.4
+  freezed_annotation: ^2.4.4
   # Automatically generate code for converting to and from JSON by annotating Dart classes.
   # https://pub.dev/packages/json_serializable/install
   json_serializable: ^6.9.0
@@ -130,33 +130,18 @@ flutter_gen:
 flutter:
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/svgs/
+    - assets/images/
+    - assets/lottie_animation/
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/to/resolution-aware-images
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/to/asset-from-package
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
   # fonts:
-  #   - family: Schyler
+  #   - family: PlayfairDisplay
   #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
+  #       - asset: assets/fonts/play_fair_display/PlayfairDisplay-Italic.ttf
+  #       - asset: assets/fonts/play_fair_display/PlayfairDisplay.ttf
+  #         # style: italic
+  #   - family: AirbnbCerialApp
   #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+  #       - asset: assets/fonts/airbnb_cereal_app/airbnb-cereal-app-medium.ttf
+  #       - asset: assets/fonts/airbnb_cereal_app/airbnb-cereal-app-book.ttf
