@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommrece_app_job/core/helpers/shared_pref_helper.dart';
 import 'package:flutter_ecommrece_app_job/core/routing/routes.dart';
 import 'package:get/get.dart';
 
@@ -7,6 +6,7 @@ abstract class OnBoardingController extends GetxController {
   void nextPage();
   void onPageChanged(int index);
   void prevPage();
+  void goToPageAnimate(int index);
 }
 
 class OnBoardingControllerImp extends OnBoardingController {
@@ -14,6 +14,8 @@ class OnBoardingControllerImp extends OnBoardingController {
   late PageController pageController;
   // MyServices services = Get.find();
   @override
+  /// Go to the next page if not at the last one, otherwise
+  /// go to the login screen.
   void nextPage() {
     if (currentPage == 2) {
       // SharedPrefHelper.setData("onBoarding", true);
@@ -54,5 +56,14 @@ class OnBoardingControllerImp extends OnBoardingController {
   void dispose() {
     pageController.dispose();
     super.dispose();
+  }
+
+  @override
+  void goToPageAnimate(int index) {
+    pageController.animateToPage(
+      index,
+      duration: const Duration(seconds: 1),
+      curve: Curves.easeInOut,
+    );
   }
 }
