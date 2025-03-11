@@ -1,6 +1,6 @@
 name: flutter_ecommrece_app_job
 description: "A new Flutter project."
-publish_to: 'none' 
+publish_to: "none"
 
 version: 1.0.0+1
 
@@ -11,14 +11,14 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-  
+
   # State managment
   get: ^4.6.1
   # DateTime
   jiffy: ^6.3.2
   intl: ^0.19.0
   # Images
-  cached_network_image: ^3.2.0 
+  cached_network_image: ^3.2.0
   image_picker: ^1.1.2
   # Animate
   show_up_animation: ^2.0.0
@@ -28,7 +28,7 @@ dependencies:
   google_maps_flutter: ^2.1.5
   geolocator: ^13.0.2
   geocoding: ^3.0.0
-  # Firebase And Notification 
+  # Firebase And Notification
   firebase_messaging: ^15.2.4
   firebase_core: ^3.12.1
   flutter_local_notifications: ^18.0.1
@@ -37,22 +37,21 @@ dependencies:
   sqflite: ^2.0.2
   shared_preferences: ^2.0.15
   path: ^1.8.0
-  # Qrcode 
+  # Qrcode
   qr_flutter: ^4.0.0
-  scan: ^1.6.0
   grouped_list: ^6.0.0
   url_launcher: ^6.1.2
   dropdown_search: ^6.0.2
   badges: ^3.1.2
-  # Icon 
+  # Icon
   font_awesome_flutter: ^10.1.0
   fluttericon: ^2.0.0
   dartz: ^0.10.1
   # Google Auth
-  google_sign_in: ^6.3.0  
+  google_sign_in: ^6.3.0
   device_preview: ^1.2.0
   responsive_builder: ^0.7.1
-  image_pickers: ^2.0.0+2
+  # image_pickers: ^2.0.5
   # Code generater (mainly used with cubit & retrifit)
   # https://pub.dev/packages/freezed/install
   freezed: ^2.5.7
@@ -80,7 +79,9 @@ dependencies:
   flutter_svg: ^2.0.15
   # For Adapting screen and Font size
   # https://pub.dev/packages/flutter_screenutil/install
-  flutter_screenutil: ^5.9.3
+  # flutter_screenutil: ^5.9.3
+  sizer: ^3.0.5
+  # 2.0.15
   # A package provides an easy way to add shimmer effect
   # https://pub.dev/packages/shimmer/install
   shimmer: ^3.0.0
@@ -105,13 +106,14 @@ dependencies:
   # Render After Effects animations natively on Flutter. This package is a pure Dart implementation of a Lottie player
   # https://pub.dev/packages/lotti
   lottie: ^3.2.0
-  
+  smooth_page_indicator: ^1.2.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
-   # https://pub.dev/packages/build_runner/install
+  flutter_lints:
+    ^5.0.0
+    # https://pub.dev/packages/build_runner/install
   build_runner: ^2.4.13
   # https://pub.dev/packages/flutter_gen_runner/install
   flutter_gen_runner: ^5.8.0
@@ -135,13 +137,28 @@ flutter:
     - assets/images/
     - assets/lottie_animation/
 
-  # fonts:
-  #   - family: PlayfairDisplay
-  #     fonts:
-  #       - asset: assets/fonts/play_fair_display/PlayfairDisplay-Italic.ttf
-  #       - asset: assets/fonts/play_fair_display/PlayfairDisplay.ttf
-  #         # style: italic
-  #   - family: AirbnbCerialApp
-  #     fonts:
-  #       - asset: assets/fonts/airbnb_cereal_app/airbnb-cereal-app-medium.ttf
-  #       - asset: assets/fonts/airbnb_cereal_app/airbnb-cereal-app-book.ttf
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo/Cairo-Black.ttf
+        - asset: assets/fonts/Cairo/Cairo-Bold.ttf
+        - asset: assets/fonts/Cairo/Cairo-ExtraLight.ttf
+        - asset: assets/fonts/Cairo/Cairo-Light.ttf
+        - asset: assets/fonts/Cairo/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo/Cairo-SemiBold.ttf
+          weight: 700
+
+    - family: PlayfairDisplay
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf 
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-BlackItalic.ttf 
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf 
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf 
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-ExtraBold.ttf 
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-ExtraBoldItalic.ttf 
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf 
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-Medium.ttf 
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-MediumItalic.ttf 
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf 
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.ttf 
+        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-SemiBoldItalic.ttf 
