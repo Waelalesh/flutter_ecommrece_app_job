@@ -1,5 +1,4 @@
 import 'package:flutter_ecommrece_app_job/core/shared/imports.dart';
-import 'package:get/get.dart';
 
 class EcommerceApp extends StatelessWidget {
   const EcommerceApp({super.key});
