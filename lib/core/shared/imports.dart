@@ -3,7 +3,7 @@ export 'package:animate_do/animate_do.dart';
 export 'package:flutter_ecommrece_app_job/core/helpers/extensions.dart';
 export 'package:flutter/material.dart';
 export 'package:flutter/services.dart';
- 
+
 export 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
 
