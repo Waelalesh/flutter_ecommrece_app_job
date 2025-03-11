@@ -7,7 +7,7 @@ class AppTextFormField extends StatefulWidget {
   final TextFormFieldType type;
   final String? hintText;
   final TextStyle? hintStyle;
-  final Color? backgroundColor;
+  final Color? backgroundColor;       
   final Widget? prefixIcon;
   final PhoneController? phoneController;
 

@@ -1,6 +1,5 @@
-import 'package:animate_do/animate_do.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+ 
+import 'package:flutter_ecommrece_app_job/core/shared/imports.dart';
 
 class AnimatedAppButton extends StatelessWidget {
   const AnimatedAppButton({
@@ -9,7 +8,8 @@ class AnimatedAppButton extends StatelessWidget {
     required this.color,
     required this.height,
     required this.text,
-    required this.textStyle, required this.milliSecondsDuration,
+    required this.textStyle,
+    required this.milliSecondsDuration,
   });
   final void Function() onPressed;
   final Color color;
@@ -20,20 +20,14 @@ class AnimatedAppButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FadeInUp(
-        duration: Duration(milliseconds: milliSecondsDuration),
-        child: MaterialButton(
-          onPressed: onPressed,
-          color: color,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(50),
-          ),
-          height: height.h,
-          child: Center(
-            child: Text(
-              text,
-              style: textStyle,
-            ),
-          ),
-        ));
+      duration: Duration(milliseconds: milliSecondsDuration),
+      child: MaterialButton(
+        onPressed: onPressed,
+        color: color,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+        height: height.h,
+        child: Center(child: Text(text, style: textStyle)),
+      ),
+    );
   }
 }
